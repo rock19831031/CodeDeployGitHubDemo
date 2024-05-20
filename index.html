@@ -30,10 +30,10 @@
     <h2>This application was deployed using AWS CodeDeploy.</h2>
     <p>For next steps, read the <a href="http://aws.amazon.com/documentation/codedeploy">AWS CodeDeploy Documentation</a>.</p>
   </div>
-  <form action="http://sigv4examplebucket.s3.amazonaws.com/" method="post" enctype="multipart/form-data">
-    <input type="input"  name="key" value="user/user1/${filename}" /><br />
+  <form action="http://rock-bucket-20240508.s3.amazonaws.com/" method="post" enctype="multipart/form-data">
+    <input type="input"  name="key" value="${filename}" /><br />
     <input type="hidden" name="acl" value="public-read" />
-    <input type="hidden" name="success_action_redirect" value="http://sigv4examplebucket.s3.amazonaws.com/successful_upload.html" />
+    <input type="hidden" name="success_action_redirect" value="http://rock-bucket-20240508.s3.amazonaws.com/successful_upload.html" />
     <input type="input"  name="Content-Type" value="image/jpeg" /><br />
     <input type="hidden" name="x-amz-meta-uuid" value="14365123651274" />
     <input type="hidden" name="x-amz-server-side-encryption" value="AES256" />
