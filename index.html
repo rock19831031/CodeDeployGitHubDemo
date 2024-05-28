@@ -49,12 +49,12 @@
     <input type="submit" name="submit" value="Upload to Amazon S3" />
   </form>
 
-  <form action="http://s3.amazonaws.com/rock-bucket-20240508" method="post" enctype="multipart/form-data">
+  <form action="http://rock-bucket-20240508.s3.amazonaws.com/" method="post" enctype="multipart/form-data">
     <input type="text" name="acl" value="public-read" />
     <input type="text" name="content-type" value="image/jpeg" />
     <input type="hidden" name="AWSAccessKeyId" value="AKIAUDYGY4HFPOY7HP4Z" />
     <input type="hidden" name="policy" value="ewogICJleHBpcmF0aW9uIjogIjIwMzUtMTItMjlUMTI6MDA6MDAuMDAwWiIsCiAgImNvbmRpdGlvbnMiOiBbCiAgICB7ImJ1Y2tldCI6ICJyb2NrLWJ1Y2tldC0yMDI0MDUwOCIgfSwKICAgIHsiYWNsIjogInB1YmxpYy1yZWFkIiB9CiAgXQp9Cg==" />
-    <input type="hidden" name="X-Amz-Signature" value="Iy9NIcVPZunsQ9tJdh4JVHWgMX8=" />
+    <input type="hidden" name="signature" value="Iy9NIcVPZunsQ9tJdh4JVHWgMX8=" />
     <input name="file" type="file" />
     <input name="submit" value="Upload" type="submit" />
   </form>
