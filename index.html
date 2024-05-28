@@ -41,23 +41,12 @@
     <input type="text"   name="X-Amz-Algorithm" value="AWS4-HMAC-SHA256" />
     <input type="text"   name="X-Amz-Date" value="20351229T000000Z" />
     <input type="input"  name="x-amz-meta-tag" value="" /><br />
-    <input type="hidden" name="Policy" value='ewogICJleHBpcmF0aW9uIjogIjIwMzUtMTItMjlUMTI6MDA6MDAuMDAwWiIsCiAgImNvbmRpdGlvbnMiOiBbCiAgICB7ImJ1Y2tldCI6ICJyb2NrLWJ1Y2tldC0yMDI0MDUwOCIgfSwKICAgIHsiYWNsIjogInB1YmxpYy1yZWFkIiB9CiAgXQp9Cg=' />
-    <input type="hidden" name="X-Amz-Signature" value="Iy9NIcVPZunsQ9tJdh4JVHWgMX8=" />
+    <input type="hidden" name="Policy" value='eyJleHBpcmF0aW9uIjoiMjAzNS0xMi0yOVQxMjowMDowMC4wMDBaIiwiY29uZGl0aW9ucyI6W3siYnVja2V0Ijoicm9jay1idWNrZXQtMjAyNDA1MDgifSx7ImFjbCI6InB1YmxpYy1yZWFkIn1dfQ==' />
+    <input type="hidden" name="X-Amz-Signature" value="cffff94dfd53e1ba72060d0943fc9e609ae35485e64ec4812727e3a2cda7979e" />
 
     <input type="file"   name="file" /> <br />
     <!-- The elements after this will be ignored -->
     <input type="submit" name="submit" value="Upload to Amazon S3" />
-  </form>
-
-  <p>
-  <form action="http://rock-bucket-20240508.s3.amazonaws.com/" method="post" enctype="multipart/form-data">
-    <input type="input" name="key" value="${filename}" /><br />
-    <input type="text" name="acl" value="public-read" />
-    <input type="hidden" name="AWSAccessKeyId" value="AKIAUDYGY4HFPOY7HP4Z" />
-    <input type="hidden" name="policy" value="ewogICJleHBpcmF0aW9uIjogIjIwMzUtMTItMjlUMTI6MDA6MDAuMDAwWiIsCiAgImNvbmRpdGlvbnMiOiBbCiAgICB7ImJ1Y2tldCI6ICJyb2NrLWJ1Y2tldC0yMDI0MDUwOCIgfSwKICAgIHsiYWNsIjogInB1YmxpYy1yZWFkIiB9CiAgXQp9Cg==" />
-    <input type="hidden" name="signature" value="Iy9NIcVPZunsQ9tJdh4JVHWgMX8=" />
-    <input name="file" type="file" />
-    <input name="submit" value="Upload" type="submit" />
   </form>
 </body>
 </html>
