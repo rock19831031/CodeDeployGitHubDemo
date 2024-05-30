@@ -56,11 +56,11 @@
         fetch(apiGatewayUrl, {
             method: 'GET', // 根据API要求修改为GET、POST等
             headers: {
-              'Content-Type': 'application/json', // 根据API要求设置正确的Content-Type
+              'Content-Type': 'application/json' // 根据API要求设置正确的Content-Type
             },
             mode: 'no-cors'
         })
-        .then(response => alert(response)) // 解析JSON响应
+        .then(response => response.data) // 解析JSON响应
         .then(data => console.log(data)) // 处理响应数据
         .catch(error => console.error('Error:', error));
     }
