@@ -50,7 +50,6 @@
   <button id="myButton">调用API Gateway</button>
   <script>
     function call_api_gateway() {
-        alert("测试");
         const apiGatewayUrl = "https://ak85zgyay8.execute-api.ap-southeast-1.amazonaws.com/test";
 
         // 使用fetch API发送请求
@@ -61,7 +60,7 @@
             },
             mode: 'no-cors'
         })
-        .then(response => response.json()) // 解析JSON响应
+        .then(response => alert(response)) // 解析JSON响应
         .then(data => console.log(data)) // 处理响应数据
         .catch(error => console.error('Error:', error));
     }
