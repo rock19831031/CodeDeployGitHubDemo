@@ -31,18 +31,15 @@
     <p>For next steps, read the <a href="http://aws.amazon.com/documentation/codedeploy">AWS CodeDeploy Documentation</a>.</p>
   </div>
   <form action="http://rock-bucket-20240508.s3.amazonaws.com/" method="post" enctype="multipart/form-data">
-    <input type="input"  name="key" value="${filename}" /><br />
     <input type="hidden" name="acl" value="public-read" />
     <input type="hidden" name="success_action_redirect" value="http://rock-bucket-20240508.s3.amazonaws.com/successful_upload.html" />
-    <input type="input"  name="Content-Type" value="image/jpeg" /><br />
     <input type="hidden" name="x-amz-meta-uuid" value="14365123651274" />
     <input type="hidden" name="x-amz-server-side-encryption" value="AES256" />
     <input type="text"   name="X-Amz-Credential" value="AKIAUDYGY4HFPOY7HP4Z/20351229/ap-southeast-1/s3/aws4_request" />
     <input type="text"   name="X-Amz-Algorithm" value="AWS4-HMAC-SHA256" />
     <input type="text"   name="X-Amz-Date" value="20351229T000000Z" />
-    <input type="input"  name="x-amz-meta-tag" value="" /><br />
-    <input type="hidden" name="Policy" value='eyJleHBpcmF0aW9uIjoiMjAzNS0xMi0yOVQxMjowMDowMC4wMDBaIiwiY29uZGl0aW9ucyI6W3siYnVja2V0Ijoicm9jay1idWNrZXQtMjAyNDA1MDgifSx7ImFjbCI6InB1YmxpYy1yZWFkIn0seyJzdWNjZXNzX2FjdGlvbl9yZWRpcmVjdCI6Imh0dHA6Ly9yb2NrLWJ1Y2tldC0yMDI0MDUwOC5zMy5hbWF6b25hd3MuY29tL3N1Y2Nlc3NmdWxfdXBsb2FkLmh0bWwifSx7IngtYW16LW1ldGEtdXVpZCI6IjE0MzY1MTIzNjUxMjc0In0seyJ4LWFtei1zZXJ2ZXItc2lkZS1lbmNyeXB0aW9uIjoiQUVTMjU2In0sWyJzdGFydHMtd2l0aCIsIiR4LWFtei1tZXRhLXRhZyIsIiJdLHsieC1hbXotY3JlZGVudGlhbCI6IkFLSUFVRFlHWTRIRlBPWTdIUDRaLzIwMzUxMjI5L2FwLXNvdXRoZWFzdC0xL3MzL2F3czRfcmVxdWVzdCJ9LHsieC1hbXotYWxnb3JpdGhtIjoiQVdTNC1ITUFDLVNIQTI1NiJ9LHsieC1hbXotZGF0ZSI6IjIwMzUxMjI5VDAwMDAwMFoifV19' />
-    <input type="hidden" name="X-Amz-Signature" value="sVIghWIwel5ZLnpJAwEkL/AwC7R3ewkMM0WlGttMAJo=" />
+    <input type="hidden" name="Policy" value='eyJleHBpcmF0aW9uIjoiMjAzNS0xMi0yOVQxMjowMDowMC4wMDBaIiwiY29uZGl0aW9ucyI6W3siYnVja2V0Ijoicm9jay1idWNrZXQtMjAyNDA1MDgifSx7ImFjbCI6InB1YmxpYy1yZWFkIn0seyJzdWNjZXNzX2FjdGlvbl9yZWRpcmVjdCI6Imh0dHA6Ly9yb2NrLWJ1Y2tldC0yMDI0MDUwOC5zMy5hbWF6b25hd3MuY29tL3N1Y2Nlc3NmdWxfdXBsb2FkLmh0bWwifSx7IngtYW16LW1ldGEtdXVpZCI6IjE0MzY1MTIzNjUxMjc0In0seyJ4LWFtei1zZXJ2ZXItc2lkZS1lbmNyeXB0aW9uIjoiQUVTMjU2In0seyJ4LWFtei1jcmVkZW50aWFsIjoiQUtJQVVEWUdZNEhGUE9ZN0hQNFovMjAzNTEyMjkvYXAtc291dGhlYXN0LTEvczMvYXdzNF9yZXF1ZXN0In0seyJ4LWFtei1hbGdvcml0aG0iOiJBV1M0LUhNQUMtU0hBMjU2In0seyJ4LWFtei1kYXRlIjoiMjAzNTEyMjlUMDAwMDAwWiJ9XX0' />
+    <input type="hidden" name="X-Amz-Signature" value="rYVf+WUKvs5lZBNQ9bo6keBNgnEq3MNXNtUywf3C1tI=" />
 
     <input type="file"   name="file" /> <br />
     <!-- The elements after this will be ignored -->
