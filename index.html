@@ -74,7 +74,7 @@
         .then(function(result){
            data = result.data;
            str = JSON.stringify(data);
-           document.getElementById("result").setValue(str);
+           document.getElementById("result").value = str;
            console.log(str);
         }).catch(function(result){
             str = JSON.stringify(result);
