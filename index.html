@@ -58,7 +58,9 @@
     <!-- The elements after this will be ignored -->
     <input type="submit" name="submit" value="Upload to Amazon S3" /> <br />
   </form>
-  <button id="myButton">调用API Gateway</button>
+  <button id="myButton">调用API Gateway</button><br/>
+  <input type="text" id="result" />
+
   <script>
     function call_api_gateway() {
         var apigClient = apigClientFactory.newClient({
@@ -70,8 +72,9 @@
         }
         apigClient.testGet(param)
         .then(function(result){
-           data = result.data
+           data = result.data;
            str = JSON.stringify(data);
+           document.getElementById("result").setValue(data.data);
            console.log(str);
         }).catch(function(result){
             str = JSON.stringify(result);
