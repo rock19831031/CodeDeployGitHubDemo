@@ -67,7 +67,8 @@
         });
         apigClient.testGet()
         .then(function(result){
-           console.log(result);
+           str = JSON.stringify(result);
+           console.log(str);
         }).catch(function(result){
             alert(result);
         });
