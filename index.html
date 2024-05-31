@@ -67,10 +67,7 @@
             accessKey: 'AKIAUDYGY4HFPOY7HP4Z',
             secretKey: '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',
         });
-        param = {
-          'Access-Control-Allow-Origin': '*'
-        }
-        apigClient.testGet(param)
+        apigClient.testGet()
         .then(function(result){
            data = result.data;
            str = JSON.stringify(data);
