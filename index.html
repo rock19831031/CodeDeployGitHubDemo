@@ -23,6 +23,17 @@
       margin-bottom: 0;
     }
   </style>
+  <script type="text/javascript" src="lib/axios/dist/axios.standalone.js"></script>
+  <script type="text/javascript" src="lib/CryptoJS/rollups/hmac-sha256.js"></script>
+  <script type="text/javascript" src="lib/CryptoJS/rollups/sha256.js"></script>
+  <script type="text/javascript" src="lib/CryptoJS/components/hmac.js"></script>
+  <script type="text/javascript" src="lib/CryptoJS/components/enc-base64.js"></script>
+  <script type="text/javascript" src="lib/url-template/url-template.js"></script>
+  <script type="text/javascript" src="lib/apiGatewayCore/sigV4Client.js"></script>
+  <script type="text/javascript" src="lib/apiGatewayCore/apiGatewayClient.js"></script>
+  <script type="text/javascript" src="lib/apiGatewayCore/simpleHttpClient.js"></script>
+  <script type="text/javascript" src="lib/apiGatewayCore/utils.js"></script>
+  <script type="text/javascript" src="apigClient.js"></script>
 </head>
 <body>
   <div align="center">
@@ -50,19 +61,16 @@
   <button id="myButton">调用API Gateway</button>
   <script>
     function call_api_gateway() {
-        const apiGatewayUrl = "https://ak85zgyay8.execute-api.ap-southeast-1.amazonaws.com/test";
-
-        // 使用fetch API发送请求
-        fetch(apiGatewayUrl, {
-            method: 'GET', // 根据API要求修改为GET、POST等
-            headers: {
-              'Content-Type': 'application/json' // 根据API要求设置正确的Content-Type
-            },
-            mode: 'no-cors'
-        })
-        .then(response => response.data) // 解析JSON响应
-        .then(data => console.log(data)) // 处理响应数据
-        .catch(error => console.error('Error:', error));
+        var apigClient = apigClientFactory.newClient({
+            accessKey: 'AKIAUDYGY4HFPOY7HP4Z',
+            secretKey: '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',
+        });
+        apigClient.GetTest()
+        .then(function(result){
+           alert(result);
+        }).catch(function(result){
+            alert(result);
+        });
     }
 
     document.getElementById("myButton").addEventListener("click", call_api_gateway);
