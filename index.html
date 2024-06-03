@@ -64,9 +64,9 @@
   <script>
     function call_api_gateway() {
         var apigClient = apigClientFactory.newClient();
-        var params = new Map([]);
-        var body = new Map([["statusCode", 200]]);
-        var additionalParams = new Map([]);
+        var params;
+        var body = "{"statusCode":200}"
+        var additionalParams;
         apigClient.testPost(params, body, additionalParams)
         .then(function(result){
            data = result.data;
